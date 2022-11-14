@@ -41,7 +41,7 @@ namespace Platform
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panel1.ForeColor = System.Drawing.SystemColors.MenuText;
@@ -54,6 +54,7 @@ namespace Platform
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(68, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(229, 29);
@@ -70,15 +71,16 @@ namespace Platform
             // 
             // btnSelectSongs
             // 
-            this.btnSelectSongs.BackColor = System.Drawing.Color.White;
+            this.btnSelectSongs.BackColor = System.Drawing.Color.Black;
             this.btnSelectSongs.Font = new System.Drawing.Font("Modern No. 20", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectSongs.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSelectSongs.ForeColor = System.Drawing.Color.White;
             this.btnSelectSongs.Location = new System.Drawing.Point(590, 316);
             this.btnSelectSongs.Name = "btnSelectSongs";
             this.btnSelectSongs.Size = new System.Drawing.Size(198, 53);
             this.btnSelectSongs.TabIndex = 2;
             this.btnSelectSongs.Text = "Select Songs";
             this.btnSelectSongs.UseVisualStyleBackColor = false;
+            this.btnSelectSongs.Click += new System.EventHandler(this.btnSelectSongs_Click);
             // 
             // axWindowsMediaPlayer1
             // 
@@ -94,7 +96,7 @@ namespace Platform
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
-            this.ClientSize = new System.Drawing.Size(800, 419);
+            this.ClientSize = new System.Drawing.Size(800, 433);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.btnSelectSongs);
             this.Controls.Add(this.listBox1);

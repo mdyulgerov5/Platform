@@ -16,5 +16,10 @@ namespace Platform
         {
             InitializeComponent();
         }
+
+        private void btnSelectSongs_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
